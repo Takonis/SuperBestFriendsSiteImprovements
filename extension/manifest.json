@@ -1,0 +1,19 @@
+{
+  "name": "Super Best Friends Site Improvements",
+  "description": "Adds video and podcast position tracking and auto-seeking, and some other neato things.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+	"storage"
+  ],
+  "icons":{
+	"128":"icons/extension_icon_128.png",
+	"48":"icons/extension_icon_48.png"
+  },
+  "content_scripts": [{
+	"matches": ["http://superbestfriendsplay.com/*"],
+	"css": 	   ["assets/player.css"],
+	"js":      ["assets/jquery.min.js", "content.js"]
+  }],
+  "manifest_version": 2
+}
